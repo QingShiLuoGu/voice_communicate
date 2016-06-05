@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/backimage"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/select_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/select_contact"
+        android:textColor="@color/white"
+        android:textSize="18sp" >
+    </Button>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+    </View>
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name" >
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+    </View>
+
+    <EditText
+         android:layout_marginLeft="10dp"
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/number" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <Button
+            android:id="@+id/use_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/use_voice"
+            android:textColor="@color/white"
+            android:textSize="18sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/use_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/use_wifi"
+            android:textColor="@color/white"
+            android:textSize="18sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

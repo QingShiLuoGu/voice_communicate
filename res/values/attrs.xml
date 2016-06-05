@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction"/>
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color" />
+        <attr name="DialogSpotCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="gifView">
+
+        <!-- 图片来源 -->
+        <attr name="src" format="integer" />
+
+        <!-- 播放延迟 -->
+        <attr name="delay" format="integer" />
+
+        <!-- 设置是否停止 -->
+        <attr name="stop" format="boolean" />
+    </declare-styleable>
+
+</resources>
